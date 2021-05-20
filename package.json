@@ -3,7 +3,8 @@
   "version": "1.0.1",
   "description": "脚骨架工具",
   "bin": {
-    "wxz-use-eslint-ts": "./wxz-use-eslint-ts.js"
+    "wxz-use-eslint-ts": "./wxz-use-eslint-ts.js",
+    "wxz-use-ts": "./wxz-use-ts.js"
   },
   "repository": {
     "type": "git",

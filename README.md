@@ -15,3 +15,9 @@ npm i -g @xizher/cli
 wxz-use-eslint-ts
 ```
 
+### 配置TypeScript
+
+```bash
+wxz-use-ts
+```
+
