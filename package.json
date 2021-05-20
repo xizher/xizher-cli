@@ -1,0 +1,21 @@
+{
+  "name": "@xizher/cli",
+  "version": "1.0.0",
+  "description": "脚骨架工具",
+  "bin": {
+    "wxz-use-eslint-ts": "./wxz-use-eslint-ts.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xizher/xizher-cli.git"
+  },
+  "keywords": [
+    "cli"
+  ],
+  "author": "wu xizhe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xizher/xizher-cli/issues"
+  },
+  "homepage": "https://github.com/xizher/xizher-cli#readme"
+}
