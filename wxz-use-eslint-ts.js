@@ -8,7 +8,7 @@ const config = {
   }
 }
 
-const { pathReslove, readFile,  writeFile, rewriteFile } = require('./utils')
+const { pathReslove, readFile,  writeFile, rewriteFile, toJsonString } = require('./utils')
 
 async function createEslintrcFile () {
   const templateFilePath = pathReslove('../', __dirname, 'templates', 'eslint-ts.js')
@@ -27,7 +27,7 @@ async function addEslintInPackage () {
     json.devDependencies = {
       ...config.eslintPackages
     }
-    return JSON.stringify(json, null, 2)
+    return toJsonString(json)
   })
 }
 
