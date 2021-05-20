@@ -55,6 +55,7 @@ async function addTsInPackage () {
       json.devDependencies = {}
     }
     json.devDependencies = {
+      ...json.devDependencies,
       ...config.tsPackages
     }
     return toJsonString(json)

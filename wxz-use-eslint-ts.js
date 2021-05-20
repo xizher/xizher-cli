@@ -25,6 +25,7 @@ async function addEslintInPackage () {
       json.devDependencies = {}
     }
     json.devDependencies = {
+      ...json.devDependencies,
       ...config.eslintPackages
     }
     return toJsonString(json)
