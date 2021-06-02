@@ -1,6 +1,6 @@
 {
   "name": "@xizher/cli",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "脚骨架工具",
   "bin": {
     "wxz-use-eslint-ts": "./wxz-use-eslint-ts.js",
