@@ -4,7 +4,9 @@
   "description": "脚骨架工具",
   "bin": {
     "wxz-use-eslint-ts": "./wxz-use-eslint-ts.js",
-    "wxz-use-ts": "./wxz-use-ts.js"
+    "wxz-use-ts": "./wxz-use-ts.js",
+    "wxz-create-vue2-esri": "./wxz-create-vue2-esri.js",
+    "wxz-create-vue3-esri": "./wxz-create-vue3-esri.js"
   },
   "repository": {
     "type": "git",

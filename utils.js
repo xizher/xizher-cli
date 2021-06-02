@@ -12,10 +12,26 @@ async function rewriteFile (filePath, callback) {
   await writeFile(filePath, newTxt)
 }
 
+async function copyDir (fromDirPath, toDirPath) {
+  const list = await fs.readdir(fromDirPath, { withFileTypes: true })
+  list.forEach(item => {
+    const name = item.name
+    const fromPath = pathReslove(fromDirPath, name)
+    const toPath = pathReslove(toDirPath, name)
+    if (item.isDirectory()) {
+      fs.mkdir(toPath)
+      copyDir(fromPath, toPath)
+    } else {
+      fs.copyFile(fromPath, toPath)
+    }
+  })
+}
+
 module.exports = {
   pathReslove,
   readFile,
   writeFile,
   rewriteFile,
   toJsonString,
+  copyDir,
 }
